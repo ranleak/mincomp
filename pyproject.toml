@@ -14,6 +14,11 @@ authors = [
 ]
 dependencies = []
 
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.3.0",  # Combines linter (flake8/isort) and formatter (black)
+]
+
 [project.scripts]
 mincomp = "mincomp.cli:main"
 
@@ -23,3 +28,19 @@ include = ["mincomp*"]
 [tool.setuptools.package-data]
 # Ensure the compiled binary is included when the python package is installed/distributed
 mincomp = ["bin/ffmpeg", "bin/ffmpeg.exe"]
+
+# Ruff Configuration
+[tool.ruff]
+line-length = 88
+target-version = "py37"
+
+[tool.ruff.lint]
+# Enable Pyflakes (F), Pycodestyle (E, W), and Isort (I)
+select = ["E", "F", "I", "W"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
