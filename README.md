@@ -1,5 +1,7 @@
 # MinComp
 
+![MinComp Logo](/readme-assets/MinComp_Logo_Small.png)
+
 **A minimal, lightweight video compressor powered by a custom FFmpeg build.**
 
 MinComp is a Python-based command-line utility designed to compress video files efficiently, especially on lower-end computers with 2 to 4 CPU cores. Instead of relying on a bloated, generic installation of FFmpeg, MinComp compiles its own highly stripped-down version of FFmpeg under the hood. This custom binary is optimized for speed and only includes the essential components needed to convert standard videos into highly compatible H.264/AAC MP4 files.
