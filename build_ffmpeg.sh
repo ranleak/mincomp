@@ -71,4 +71,4 @@ cp ffmpeg "$BIN_DIR/ffmpeg"
 chmod +x "$BIN_DIR/ffmpeg"
 
 echo "Success! Minimal FFmpeg binary placed in $BIN_DIR/ffmpeg"
-echo "You can safely delete the build_tmp directory."
+echo "You can safely delete the build_tmp directory with rm -rf "$BUILD_DIR"."
